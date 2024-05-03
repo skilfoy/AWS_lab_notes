@@ -32,7 +32,7 @@ Real-time streaming data underpins many modern businesses and solutions, and one
 ```
 ### Develop Kinesis Producer Lambda Function
 
-- Create Lambda Function: “produceKinesisEvents”
+- Create Lambda Function: “produceKinesisEvents.py”
     - Python:
         - Goal here is to create fake geocoordinates as we might see in an incoming gps data stream.
             - Create random uuid for id
@@ -82,8 +82,7 @@ def lambda_handler(event, context):
 
 - AWS base64 encodes data, so we want to decode it and reinsert it into the data field
 
-- We'll use the following python code:
-    - 
+- We'll use the following python code: "consumeKinesisEvents.py"
  
 ```
 import json
